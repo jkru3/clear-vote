@@ -14,37 +14,29 @@ section:target {
   font-family: Verdana, "Open sans", Rubik, sans-serif;
 }
 
-h1 {
+h1, h2, h3{
   font-family: Georgia, Merriweather, Spectral, serif;
-  font-size: 161%;
+}
+
+h1 {
+  font-size: 200%;
 }
 
 footer {
-  padding-top: 80px
+  padding-top: 10px
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  overflow: visible;
+  padding-left: 0px;
 }
 
 li {
-  float: left;
-}
-
-li a {
   display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
+  text-align: left;
+  padding: 10px;
 }
 
 /* COLLAPSIBLE!!! */
