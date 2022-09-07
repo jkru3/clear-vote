@@ -1,0 +1,108 @@
+html {
+    <--! font-size: 10px; -->
+}
+
+section {
+  display: none;
+}
+
+section:target {
+  display: block;
+}
+
+* {
+  font-family: Verdana, "Open sans", Rubik, sans-serif;
+}
+
+h1 {
+  font-family: Georgia, Merriweather, Spectral, serif;
+  font-size: 161%;
+}
+
+footer {
+  padding-top: 80px
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* COLLAPSIBLE!!! */
+.collapsible { 
+  background-color: #eee; /*button color*/
+  color: #444; /*text color*/
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0px 18px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* TOOLTIPS */
+.info {
+  position: relative;
+  display: inline-block;
+}
+
+.info .infotext {
+  visibility: hidden;
+  width: 50vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.info:hover .infotext {
+  transition-delay: .1s;
+  visibility: visible;
+  opacity: 1;
+}

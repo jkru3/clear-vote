@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!-- 
+    this is a basic HTML project with good style! 
+ 
+    -1. arrow functions and async/promises
+    0. bootstrap
+    1. push to gitlab
+    
+  -->
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clear Vote</title>
+</head>
+
+<header>
+  <nav>
+    <h1>Clear Vote</h1>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<body>
+  <section id="home">
+    <div>
+      <h2>You deserve to be informed</h2>
+      <p>Clear Vote lets you visibly see the motivations of your local election candidates so you don't have to guess</p>
+    </div>
+    <button type="button" class="collapsible">Let's get started</button>
+    <div class="content">
+      <ul>
+        <li>
+          <span class="info">
+            <i id="demo1" class=""></i>
+            <span id="demo2">issue-name</span>
+            <p class="infotext" id="demo3">issue-text</p>
+          </span>
+          <input type="range" min="1" max="50" value="1" class="userRating" id="myRange"/>
+          <i id="demo4" onclick="switchStance()"></i>
+          <p id="value"></p>
+        </li>
+        <li>
+          <span class="info">
+            <i class="fa-solid fa-gun"></i>
+            <span>Gun Control</span>
+            <span class="infotext">MURICA'</span>
+          </span>
+          <input type="range" min="1" max="50" value="1" class="userRating" for="issue2"/>
+        </li>
+      </ul>
+      <a href="sort.html", class="sort">Next &raquo</a>
+    </div>
+  </section>
+  
+  <section id="about">
+    <p>Our goals are: <br>
+    1. to foster unity across all political spectrums <br>
+    2. to provide transparency covering the values our representatives support</p>
+  </section>
+
+  <section id="sort">
+    something here
+  </section>
+
+  <script src="https://kit.fontawesome.com/8c8ef345c9.js" crossorigin="anonymous"></script>
+  <script src="home.js"></script>
+</body>
+
+<footer>
+  <span>&copy 2022 by <a href="mailto:jkru3@cs.washington.edu">jkru3</a>. All Rights Reserved.</span>
+</footer>
+</html>
