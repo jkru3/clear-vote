@@ -1,7 +1,43 @@
 html {
-    <--! font-size: 10px; -->
+  background: url('../assets/vote.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.image {
+  background-size: 960px;
+  position: absolute;
+  top: 200; 
+  right: 70;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  justify-content: center;
+  height:30px;
+}
+
+.box {
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+* {
+  font-family: Verdana, "Open sans", Rubik, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Merriweather, Spectral, serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* shows and hides sections */
 section {
   display: none;
 }
@@ -10,22 +46,12 @@ section:target {
   display: block;
 }
 
-* {
-  font-family: Verdana, "Open sans", Rubik, sans-serif;
-}
-
-h1, h2, h3{
-  font-family: Georgia, Merriweather, Spectral, serif;
-}
-
-h1 {
-  font-size: 200%;
-}
-
 footer {
-  padding-top: 10px
+  padding: 2rem;
+  text-align: center;
 }
 
+/*
 ul {
   list-style-type: none;
   margin: 0;
@@ -39,33 +65,7 @@ li {
   padding: 10px;
 }
 
-/* COLLAPSIBLE!!! */
-.collapsible { 
-  background-color: #eee; /*button color*/
-  color: #444; /*text color*/
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0px 18px 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-/* TOOLTIPS */
+// TOOLTIPS
 .info {
   position: relative;
   display: inline-block;
@@ -80,21 +80,21 @@ li {
   padding: 5px 0;
   border-radius: 6px;
 
-  /* Position the tooltip text */
+  // Position the tooltip text
   position: absolute;
   z-index: 1;
   top: 100%;
   left: 50%;
   margin-left: -60px;
 
-  /* Fade in tooltip */
+  // Fade in tooltip
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+// Show the tooltip text when you mouse over the tooltip container
 .info:hover .infotext {
   transition-delay: .1s;
   visibility: visible;
   opacity: 1;
-}
+}*/

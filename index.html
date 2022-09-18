@@ -10,53 +10,72 @@
   -->
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Clear Vote</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"></head>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-  <nav>
-    <h1>Clear Vote</h1>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
-
 <body>
-  <section id="home">
-    <div>
-      <h2>You deserve to be informed</h2>
-      <p>Clear Vote lets you visibly see the motivations of your local election candidates so you don't have to guess</p>
-    </div>
-    <button type="button" class="collapsible">Let's get started</button>
-    <div class="content">
-      <ul>
-        <li>
-          <span class="info">
-            <i id="demo1" class=""></i>
-            <span id="demo2">issue-name</span>
-            <p class="infotext" id="demo3">issue-text</p>
-          </span>
-          <input type="range" min="1" max="50" value="1" class="userRating" id="myRange"/>
-          <i id="demo4" onclick="switchStance()"></i>
-          <span id="value"></span>
+  <nav class="navbar navbar-expand text-bg-primary">
+    <div class="border border-primary border-3 rounded-1">
+      <ul class="navbar-nav">
+        <li class="nav-item"></li>
+          <a href="#home" class="nav-link">Home</a>
         </li>
-        <li>
-          <span class="info">
-            <i class="fa-solid fa-gun"></i>
-            <span>Gun Control</span>
-            <span class="infotext">MURICA'</span>
-          </span>
-          <input type="range" min="1" max="50" value="1" class="userRating" for="issue2"/>
+        <li class="nav-item"></li>
+          <a href="#about" class="nav-link disabled">About</a>
         </li>
       </ul>
-      <a href="sort.html", class="sort">Next &raquo</a>
     </div>
+  </nav>
+
+  <section id="home">
+    <div class="image">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 pt-sm-5 ps-sm-4">
+          <div class="my-auto">
+              <h1>You deserve <br class="d-none d-sm-inline d-lg-none"> to be informed.</h2>
+          </div>
+          <div class="col-sm-5 col-lg-4 offset-sm-1">        
+            <h6 class="text-center"> <strong>Clear Vote</strong> lets you visibly see the motivations of your local election candidates so you don't have to guess.</h6>
+          </div>
+          <div class="d-grid d-md-block">
+            <button class="btn btn-primary collapsed offset-md-1 mt-3" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Let's get Started
+            </button>
+          </div>
+          <div class="collapse hide mt-4" id="collapseExample" style="">
+            <div class="card card-body">
+              <ul id="list" class="collapse show">
+                <li> 
+                  <span class="tt" data-bs-placement="top" title="CHANGE THIS">
+                    <i class=null></i>
+                    <span class="issue-name"></span>
+                    <!--p class="info-text">issue-text</p-->
+                  </span>
+                  <input type="range" min="1" max="50" value="1" class="user-rating" onchange="updateValue(0)" id="input-0"></input>
+                  <i onclick="switchStance(0)" class=""></i>
+                  <span class="value"></span>
+                </li>
+              </ul>
+              <a href="#sort", class="sort">Next &raquo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>&copy 2022 by <a href="mailto:jkru3@cs.washington.edu">jkru3</a>. All Rights Reserved.</footer>
   </section>
   
   <section id="about">
+    <p>How do I get started?</p>
+    <p>Go back home and you'll be presented with a list of political issues.</p>
+    <p>From that list, YOU decide what is important</p>
+    <p>Your local election candidates have done the same, and we'll show you who most lines up with your values at the end.</p>
+    
     <p>Our goals are: <br>
     1. to foster unity across all political spectrums <br>
     2. to provide transparency covering the values our representatives support</p>
@@ -66,11 +85,12 @@
     something here
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+    crossorigin="anonymous"></script>  
   <script src="https://kit.fontawesome.com/8c8ef345c9.js" crossorigin="anonymous"></script>
   <script src="home.js"></script>
+  <script src="results.js"></script>
 </body>
 
-<footer>
-  <span>&copy 2022 by <a href="mailto:jkru3@cs.washington.edu">jkru3</a>. All Rights Reserved.</span>
-</footer>
 </html>
