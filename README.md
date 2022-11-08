@@ -5,9 +5,9 @@ https://www.figma.com/file/khHOncKNOxunoqjbRw8GS3/ClearVote?node-id=5%3A257 \
 \
 ##Next Steps##
 ___________\
-\
-1. Finish Figma workflow \
-2. Create a usable React Application \
-3. Create a database for user info \
-4. Connect to Google's Candidate Info API to retrieve candidate info \
-5. Create a web scraper that returns relevant candidate info \
+
+1. Finish Figma workflow
+2. Create a usable React Application
+3. Create a database for user info
+4. Connect to Google's Candidate Info API to retrieve candidate info
+5. Create a web scraper that returns relevant candidate info
